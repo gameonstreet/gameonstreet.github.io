@@ -5,3 +5,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtZW9uc3RyZWV0IiwiYSI6ImNrcWY2aHk2djB1MWgyd
         center: [27.854587, 40.453905], // starting position [LNG, LAT]
         zoom: 10 // starting zoom
     });
+
+// Add the geocoder to the map.
+map.addControl(
+    new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        placeholder: 'Arama / Search', // placeholder text for the search bar
+        language: 'tr-TR' // specify the language as Turkish.
+    })
+);
