@@ -8,3 +8,9 @@ body {
     bottom: 0; 
     width: 100%; 
 }
+.mapboxgl-popup {
+    max-width: 400px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: arial, sans-serif;
+}
