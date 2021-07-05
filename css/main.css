@@ -14,3 +14,7 @@ body {
     line-height: 16px;
     font-family: arial, sans-serif;
 }
+
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+    margin: 20px 10px 0px 0px !important;
+}
