@@ -58,7 +58,7 @@ map.on('click', 'battery-layer', function (e) {
     var phone = e.features[0].properties.phone;
     var province = e.features[0].properties.province;
     var city = e.features[0].properties.city;
-    var description = '<strong>' + title + '</strong>' + '<p>' + address + ' ' + province + '/' + city + '</p>' + '<p>' + phone + '</p>';
+    var description = '<strong>' + title + '</strong>' + '<p>' + address + ' ' + province +  ' ' + '/' + ' ' + city + '</p>' + '<p>' + phone + '</p>';
      
     // Ensure that if the map is zoomed out such that multiple
     // copies of the feature are visible, the popup appears
