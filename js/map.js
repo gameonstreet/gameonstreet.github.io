@@ -47,6 +47,17 @@ map.on('load', function () {
             'icon-size': 0.7
         }
     });
+    
+    map.addLayer({
+        'id': 'water-layer',
+        'type': 'symbol',
+        'source': 'data',
+        'layout': {
+            'icon-image': '{marker-symbol}', // markers are hosted on MapBox Studio
+            'icon-allow-overlap': true,
+            'icon-size': 0.5
+        }
+    });
 });
 
 // When a click event occurs on a feature in the places layer, open a popup at the
