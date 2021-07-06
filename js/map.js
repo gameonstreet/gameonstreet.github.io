@@ -30,7 +30,7 @@ map.addControl(
 );
 
 map.on('load', function () {
-    map.addSource('battery', {
+    map.addSource('data', {
         type: 'geojson',
         // use a URL for the value for the `data` property.
         data: 'https://raw.githubusercontent.com/gameonstreet/mapbox-geojson/main/battery_location.geojson'
@@ -40,7 +40,7 @@ map.on('load', function () {
     map.addLayer({
         'id': 'battery-layer',
         'type': 'symbol',
-        'source': 'battery',
+        'source': 'data',
         'layout': {
             'icon-image': '{marker-symbol}', // markers are hosted on MapBox Studio
             'icon-allow-overlap': true,
