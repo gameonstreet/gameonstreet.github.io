@@ -33,7 +33,7 @@ map.on('load', function () {
     map.addSource('data', {
         type: 'geojson',
         // use a URL for the value for the `data` property.
-        data: 'https://raw.githubusercontent.com/gameonstreet/mapbox-geojson/main/battery_location.geojson'
+        data: 'https://raw.githubusercontent.com/gameonstreet/mapbox-geojson/main/mapdata.geojson'
     });
     // for more information about this section please visit the link below. If the link is dead you can email me at gameonstreet@gmail.com
     // https://gis.stackexchange.com/questions/179323/mapbox-studio-how-to-upload-glyphs-or-sprite-for-custom-markers
