@@ -43,7 +43,7 @@ map.on('load', function () {
         'source': 'data',
         'layout': {
             'icon-image': '{marker-symbol}', // markers are hosted on MapBox Studio
-            'icon-allow-overlap': false,
+            'icon-allow-overlap': true,
             'icon-size': 0.5
         }
     });
